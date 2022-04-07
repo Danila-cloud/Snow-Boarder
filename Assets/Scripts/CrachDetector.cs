@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrachDetector : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class CrachDetector : MonoBehaviour
     {
         if(other.tag == "Ground")
         {
-            Debug.Log("My HEAD!!!!!!!");
+            SceneManager.LoadScene(0);
         }
     }
 }
